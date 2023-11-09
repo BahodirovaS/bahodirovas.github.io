@@ -1,6 +1,4 @@
-# JohnDoe
-A Responsive Free One Page Portfolio Website template
-
+Used Javascript to make this portfolio
 
 
 
