@@ -9,15 +9,16 @@
 /* -----------------------------
    Tokens
 ------------------------------ */
-:root {
-  --red: #E04343;
-  --yellow: #FFE801;
-  --text: #353535;
-  --muted: #8c9398;
-  --bg: #fff;
-  --bg-soft: #f3f5f8;
-  --shadow-line: 0px 3px 0px 0px var(--red);
+:root{
+  --ink: #121212;        /* near-black for text */
+  --cream: #FAF9F6;      /* page background */
+  --cream-2: #F3F1EC;    /* soft section bg */
+  --olive: #6B705C;      /* primary accent */
+  --olive-dark: #4A4F3A; /* hover/strong */
+  --muted: #7B7B7B;      /* secondary text */
+  --line: #DED9D1;       /* dividers/borders */
 }
+
 
 /* -----------------------------
    Base
@@ -35,8 +36,8 @@ html {
 body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
-  color: var(--text);
-  background: var(--bg);
+  color: var(--ink);
+  background: var(--cream);
 }
 
 img,
@@ -109,11 +110,11 @@ h2::after {
 }
 
 .dark-bg {
-  background: var(--bg-soft);
+  background: var(--cream-2);
 }
 
 .light-bg {
-  background: #fff;
+  background: var(--cream);
 }
 
 .nopadding {
@@ -128,15 +129,15 @@ h2::after {
    Buttons / boxes
 ------------------------------ */
 .dark-box {
-  background: var(--bg-soft);
-  box-shadow: var(--shadow-line);
+  background: var(--cream-2);
+  box-shadow: var(--olive);
   padding: 20px 0;
   transition: box-shadow 0.25s ease;
 }
 
 .dark-box:hover,
 .dark-box:focus {
-  box-shadow: 0px 3px 0px 0px var(--yellow);
+  box-shadow: 0px 3px 0px 0px var(--olive-dark);
 }
 
 .box-hover {
@@ -151,8 +152,8 @@ h2::after {
 .outline-btn {
   display: inline-block;
   padding: 25px 40px;
-  color: var(--yellow);
-  border: 1px solid var(--yellow);
+  color: var(--cream);
+  border: 1px solid var(--cream);
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1px;
@@ -162,9 +163,9 @@ h2::after {
 
 .outline-btn:hover,
 .outline-btn:focus {
-  color: var(--red);
-  border-color: var(--red);
-  background: var(--yellow);
+  color: var(--olive-dark);
+  border-color: var(--cream);
+  background: var(--cream);
 }
 
 /* -----------------------------
@@ -211,14 +212,14 @@ h2::after {
   bottom: 0.5em;
   left: 0.5em;
   background: linear-gradient(
-    var(--red) 20%,
+    var(--olive) 20%,
     rgba(0, 0, 0, 0) 20%,
     rgba(0, 0, 0, 0) 40%,
-    var(--red) 40%,
-    var(--red) 60%,
+    var(--olive) 40%,
+    var(--olive) 60%,
     rgba(0, 0, 0, 0) 60%,
     rgba(0, 0, 0, 0) 80%,
-    var(--red) 80%
+    var(--olive) 80%
   );
   content: "";
 }
@@ -229,7 +230,7 @@ h2::after {
 
 .menu-wrap {
   z-index: 999;
-  background: rgba(255, 255, 255, 1);
+  background: var(--cream);
   transition:
     width 0.4s cubic-bezier(0.7, 0, 0.3, 1),
     height 0.4s cubic-bezier(0.7, 0, 0.3, 1),
@@ -276,7 +277,7 @@ h2::after {
   width: 100%;
   height: 125px;
   transform: translate3d(0, 0, 0);
-  border-bottom: 1px solid var(--red);
+  border-bottom: 1px solid var(--line);
 }
 
 .show-menu .icon-list a {
@@ -345,7 +346,7 @@ h2::after {
 h1.arrow {
   font-size: 30px;
   text-transform: uppercase;
-  color: var(--text);
+  color: var(--ink);
   letter-spacing: 4px;
   background: url("../img/h1-bg.png") no-repeat center bottom;
   padding-bottom: 30px;
@@ -353,27 +354,27 @@ h1.arrow {
 }
 
 h1.arrow span {
-  color: var(--red);
+  color: var(--olive);
 }
 
 .color-bg h1.arrow span {
-  color: #FFE800; /* yellow */
+  color: var(--cream); /* yellow */
 }
 
 /* -----------------------------
    About
 ------------------------------ */
 .color-bg {
-  background: var(--red);
+  background: var(--olive);
 }
 
 .color-bg a {
-  color: #FFE800;
+  color: var(--cream);
 }
 
 .color-bg h6,
 .color-bg p {
-  color: white;
+  color: var(--cream);
 }
 
 .about-text {
@@ -498,7 +499,7 @@ h1.arrow span {
    CTA spacer
 ------------------------------ */
 .spacer-cta {
-  background-color: var(--red);
+  background-color: var(--olive-dark);
   padding: 70px 0;
 }
 
@@ -656,9 +657,9 @@ footer p {
 }
 
 .featured-media {
-  background: var(--bg-soft);
+  background: var(--cream-2);
   padding: 18px;
-  box-shadow: var(--shadow-line);
+  box-shadow: var(--olive);
 }
 
 /* Dual app videos */
@@ -727,9 +728,9 @@ footer p {
   font-size: 12px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: var(--red);
-  border: 1px solid var(--red);
-  background: #fff;
+  color: var(--olive-dark);
+  border: 1px solid var(--olive);
+  background: var(--cream);
 }
 
 /* -----------------------------
