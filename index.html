@@ -1,38 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- Website Title -->
   <title>Sabina Bahodirova - Software Engineer</title>
-  <!-- Bootstrap -->
-  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-  <!-- Font-Awesome -->
-  <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
-  <!-- Lightbox -->
-  <link href="assets/lightbox/css/lightbox.css" rel="stylesheet" />
-  <!-- Text Rotator-->
-  <link href="assets/textrotator/simpletextrotator.css" rel="stylesheet" />
-  <!-- FlexSlider -->
-  <link href="assets/flexslider/flexslider.css" rel="stylesheet" />
-  <!-- Theme Style -->
-  <link href="css/style.css" rel="stylesheet" />
-  <!-- Animations -->
-  <link href="css/animate.css" rel="stylesheet" />
-  <!-- Custom Favicon -->
-  <link href="img/memoji.png" rel="shortcut icon" type="image/x-icon" />
 
+  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="assets/lightbox/css/lightbox.css" rel="stylesheet" />
+  <link href="assets/textrotator/simpletextrotator.css" rel="stylesheet" />
+  <link href="assets/flexslider/flexslider.css" rel="stylesheet" />
+
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/animate.css" rel="stylesheet" />
+
+  <link href="img/memoji.png" rel="shortcut icon" type="image/x-icon" />
 </head>
 
 <body id="top">
-  <!-- ****************************** Preloader ************************** -->
   <div id="preloader"></div>
 
   <!-- ==========================
-        HEADER SECTION
-        =========================== -->
+        HEADER / NAV
+  =========================== -->
   <header id="home">
     <div class="container-fluid">
       <div class="row">
@@ -50,6 +41,10 @@
         <button class="menu-button" id="open-button"></button>
       </div>
     </div>
+
+    <!-- ==========================
+          HERO
+    =========================== -->
     <section class="hero" id="hero">
       <div class="container">
         <div class="row">
@@ -57,39 +52,36 @@
             <a id="nav-toggle" class="nav_slide_button" href="index.html#"><span></span></a>
           </div>
         </div>
+
         <div class="row">
           <div class="col-md-8 col-md-offset-1 inner">
             <h1 class="animated fadeInDown">
-              S<span style="color: #e04343">a</span>bina<br />
-              <span>B<span style="color: #ffe800">a</span>hodirov<span style="color: #ffe800">a</span></span>
+              S<span class="hero-accent">a</span>bina<br />
+              <span>B<span class="hero-accent-soft">a</span>hodirov<span class="hero-accent-soft">a</span></span>
             </h1>
+
             <h3 class="animated fadeInUp delay-05s">
               <span class="rotate">Software Developer</span>
             </h3>
           </div>
-        </div>
-        <div class="row">
         </div>
       </div>
     </section>
   </header>
 
   <!-- ==========================
-        ABOUT SECTION
-        =========================== -->
-  <section class="intro text-center section-padding color-bg" id="about">
+        ABOUT
+  =========================== -->
+  <section id="about">
     <div class="container">
       <div class="row">
         <div class="col-md-8 col-md-offset-2 wp1">
-          <h1 class="arrow">A little <span>about</span> me</h1>
-          <p>
+          <h1 class="section-title">A little <span>about</span> me</h1>
           <p>
             I’m Sabina — a Boston-based software engineer who builds clean, user-focused products.
             I’ve built full-stack projects across web and mobile (React / React Native), and I enjoy
-            turning messy problems into simple experiences.
-            Outside of coding, I’m into strength training, trying new spots around the city, and keeping up with
-            neuroscience research.
-          </p>
+            turning messy problems into simple experiences. Outside of coding, I’m into strength training,
+            trying new spots around the city, and keeping up with neuroscience research.
           </p>
         </div>
       </div>
@@ -97,21 +89,19 @@
   </section>
 
   <!-- ==========================
-    FEATURED PROJECT SECTION
-    =========================== -->
-  <section class="text-center section-padding light-bg" id="featured">
+        FEATURED PROJECT
+  =========================== -->
+  <section id="featured">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="arrow">Featured <span>Project</span></h1>
+          <h1 class="section-title">Featured <span>Project</span></h1>
         </div>
       </div>
 
       <div class="row featured-wrap">
-        <!-- Image -->
         <div class="col-md-7 wp4">
           <div class="featured-media dual-video">
-            <!-- Passenger -->
             <div class="video-col">
               <p class="video-label">Passenger App</p>
               <video class="featured-video-el" autoplay muted loop playsinline preload="metadata">
@@ -119,7 +109,6 @@
               </video>
             </div>
 
-            <!-- Driver -->
             <div class="video-col">
               <p class="video-label">Driver App</p>
               <video class="featured-video-el" autoplay muted loop playsinline preload="metadata">
@@ -127,16 +116,13 @@
               </video>
             </div>
           </div>
-
-
         </div>
 
-        <!-- Copy -->
         <div class="col-md-5 wp4 delay-05s featured-copy">
           <h2 class="featured-title">RideShare Mobile App (iOS)</h2>
           <p class="featured-subtitle">
             Built a full-stack iOS rideshare platform using React Native, consisting of both passenger and driver
-            applications. 
+            applications.
           </p>
 
           <ul class="featured-bullets">
@@ -148,8 +134,9 @@
           </ul>
 
           <div class="featured-actions">
-            <a class="outline-btn featured-btn" href="https://github.com/BahodirovaS/Take4" target="_blank"
-              rel="noopener noreferrer">View Repo</a>
+            <a class="outline-btn" href="https://github.com/BahodirovaS/Take4" target="_blank" rel="noopener noreferrer">
+              View Repo
+            </a>
           </div>
 
           <div class="featured-stack">
@@ -165,149 +152,117 @@
     </div>
   </section>
 
-
   <!-- ==========================
-        BLOG SECTION
-        =========================== -->
- <section class="text-center section-padding" id="blog">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h1 class="arrow">Other <span>Notable Projects</span></h1>
-      </div>
-    </div>
-
-    <br /><br />
-
-    <div class="row">
-      <div id="blogSlider">
-        <ul class="slides">
-          <li>
-            <div class="col-md-4 wp4">
-              <div class="overlay-effect effects clearfix">
-                <div class="img">
-                  <img src="img/rsvp.png" alt="Event RSVP Platform" />
-                </div>
-              </div>
-              <br />
-              <h2>
-                <a href="https://github.com/YOUR_REPO_HERE">Event RSVP Platform</a>
-              </h2>
-              <p>
-                Designed and built a custom event website with a database-driven RSVP workflow, including guest
-                lookup, household-based responses, and confirmation messaging. Deployed a static front end with
-                backend API routes to support real-time RSVP updates.
-              </p>
-            </div>
-            <!-- Dealership Inventory -->
-            <div class="col-md-4 wp4 delay-1s">
-              <div class="overlay-effect effects clearfix">
-                <div class="img">
-                  <img src="img/car.jpg" alt="Dealership Inventory" />
-                </div>
-              </div>
-              <br />
-              <h2>
-                <a href="https://gitlab.com/msun220/carcar">Dealership Inventory</a>
-              </h2>
-              <p>
-                Built a dealership inventory system that supports selling vehicles and managing employees and
-                customers. Logged-in employees can view sales and service history and assign a sale to a specific
-                employee and customer using a vehicle’s VIN.
-              </p>
-            </div>
-
-            <!-- CookEase -->
-            <div class="col-md-4 wp4 delay-05s">
-              <div class="overlay-effect effects clearfix">
-                <div class="img">
-                  <img src="img/stats-bg-2.jpg"alt="CookEase Recipe Search" />
-                </div>
-              </div>
-              <br />
-              <h2>
-                <a href="https://github.com/BahodirovaS/cookease">CookEase Recipe Search</a>
-              </h2>
-              <p>
-                Developed a recipe discovery app that allows users to search by dietary or cooking preferences and
-                save favorite recipes. Implemented a full-stack workflow using React/Redux, FastAPI, MongoDB, and
-                vanilla JavaScript with a responsive UI.
-              </p>
-            </div>            
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <div class="spacer-cta text-center">
+        OTHER PROJECTS
+  =========================== -->
+  <section id="blog">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <a href="index.html#contact" class="outline-btn">hire sabina</a>
+          <h1 class="section-title">Other <span>Notable Projects</span></h1>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+
+      <div class="row">
+        <div id="blogSlider">
+          <ul class="slides">
+            <li>
+              <!-- RSVP -->
+              <div class="col-md-4 wp4">
+                <div class="overlay-effect effects clearfix">
+                  <div class="img">
+                    <img src="img/rsvp.png" alt="Event RSVP Platform" />
+                  </div>
+                </div>
+                <h2><a href="https://github.com/BahodirovaS/wedding-rsvp-backend">Event RSVP Platform</a></h2>
+                <p>
+                  Designed and built a custom event website with a database-driven RSVP workflow, including guest
+                  lookup, household-based responses, and confirmation messaging. Deployed a static front end with
+                  backend API routes to support real-time RSVP updates.
+                </p>
+              </div>
+
+              <!-- CarCar -->
+              <div class="col-md-4 wp4 delay-02s">
+                <div class="overlay-effect effects clearfix">
+                  <div class="img">
+                    <img src="img/car.jpg" alt="Dealership Inventory" />
+                  </div>
+                </div>
+                <h2><a href="https://gitlab.com/msun220/carcar">Dealership Inventory</a></h2>
+                <p>
+                  Built a dealership inventory system that supports selling vehicles and managing employees and
+                  customers. Logged-in employees can view sales and service history and assign a sale to a specific
+                  employee and customer using a vehicle’s VIN.
+                </p>
+              </div>
+
+              <!-- CookEase -->
+              <div class="col-md-4 wp4 delay-05s">
+                <div class="overlay-effect effects clearfix">
+                  <div class="img">
+                    <img src="img/stats-bg-2.jpg" alt="CookEase Recipe Search" />
+                  </div>
+                </div>
+                <h2><a href="https://github.com/BahodirovaS/cookease">CookEase Recipe Search</a></h2>
+                <p>
+                  Developed a recipe discovery app that allows users to search by dietary or cooking preferences and
+                  save favorite recipes. Implemented a full-stack workflow using React/Redux, FastAPI, MongoDB, and
+                  vanilla JavaScript with a responsive UI.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- CTA Spacer -->
+      <div class="spacer-cta text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <a href="index.html#contact" class="outline-btn">hire sabina</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
 
   <!-- ==========================
-        SERVICE SECTION
-        =========================== -->
-  <section class="features text-center section-padding" id="service">
+        SKILLS
+  =========================== -->
+  <section id="service">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="arrow">My Skills</h1>
+          <h1 class="section-title">My Skills</h1>
         </div>
       </div>
+
       <div class="row">
         <div class="col-md-12">
           <div class="services strengths">
-            <!-- Strength 1 -->
             <div class="col-md-4 wp2 item">
-              <div class="icon">
-                <i class="fa fa-mobile" aria-hidden="true"></i>
-              </div>
+              <div class="icon"><i class="fa fa-mobile" aria-hidden="true"></i></div>
               <h2>Mobile Product</h2>
-              <p>
-                React Native, navigation, responsive UI, state management, performance basics.
-              </p>
-              <p class="strength-list">
-                Maps • real-time UI • smooth flows
-              </p>
+              <p>React Native, navigation, responsive UI, state management, performance basics.</p>
+              <p class="strength-list">Maps • real-time UI • smooth flows</p>
             </div>
 
-            <!-- Strength 2 -->
             <div class="col-md-4 wp2 item delay-05s">
-              <div class="icon">
-                <i class="fa fa-exchange" aria-hidden="true"></i>
-              </div>
+              <div class="icon"><i class="fa fa-exchange" aria-hidden="true"></i></div>
               <h2>APIs & Integrations</h2>
-              <p>
-                Vercel API routes, REST patterns, third-party integrations, webhooks & edge cases.
-              </p>
-              <p class="strength-list">
-                Stripe • Google Maps • Clerk
-              </p>
+              <p>Vercel API routes, REST patterns, third-party integrations, webhooks & edge cases.</p>
+              <p class="strength-list">Stripe • Google Maps • Clerk</p>
             </div>
 
-            <!-- Strength 3 -->
             <div class="col-md-4 wp2 item delay-1s">
-              <div class="icon">
-                <i class="fa fa-bolt" aria-hidden="true"></i>
-              </div>
+              <div class="icon"><i class="fa fa-bolt" aria-hidden="true"></i></div>
               <h2>Real-Time Data</h2>
-              <p>
-                Firebase for real-time updates, structured data, and reliable sync across screens.
-              </p>
-              <p class="strength-list">
-                Live ride state • status updates • persistence
-              </p>
+              <p>Firebase for real-time updates, structured data, and reliable sync across screens.</p>
+              <p class="strength-list">Live ride state • status updates • persistence</p>
             </div>
           </div>
-          <div class="clearfix"></div>
-
           <div class="clearfix"></div>
         </div>
       </div>
@@ -315,40 +270,46 @@
   </section>
 
   <!-- ==========================
-        CONTACT SECTION
-        =========================== -->
-  <section class="text-center section-padding contact-wrap" id="contact">
+        CONTACT
+  =========================== -->
+  <section id="contact">
     <a href="index.html#top" class="up-btn"><i class="fa fa-chevron-up"></i></a>
+
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="arrow">Drop <span>me</span> a line</h1>
+          <h1 class="section-title">Drop <span>me</span> a line</h1>
         </div>
       </div>
+
       <div class="row contact-details">
         <div class="col-md-6">
-          <div class="dark-box box-hover">
+          <div class="dark-box">
             <h2><i class="fa fa-map-marker"></i><span>Address</span></h2>
             <p>Boston, MA</p>
           </div>
         </div>
+
         <div class="col-md-6">
-          <div class="dark-box box-hover">
+          <div class="dark-box">
             <h2><i class="fa fa-paper-plane"></i><span>Email</span></h2>
             <p>bahodirova2000@gmail.com</p>
           </div>
         </div>
       </div>
-      <br />
+
       <div class="row">
         <div class="col-md-12">
           <ul class="social-buttons">
             <li>
-              <a href="https://www.linkedin.com/in/sabinabahodirova/" class="social-btn"><i
-                  class="fa fa-linkedin"></i></a>
+              <a href="https://www.linkedin.com/in/sabinabahodirova/" class="social-btn">
+                <i class="fa fa-linkedin"></i>
+              </a>
             </li>
             <li>
-              <a href="https://gitlab.com/sbahodirova" class="social-btn"><i class="fa fa-github"></i></a>
+              <a href="https://gitlab.com/sbahodirova" class="social-btn">
+                <i class="fa fa-github"></i>
+              </a>
             </li>
           </ul>
         </div>
@@ -357,8 +318,8 @@
   </section>
 
   <!-- ==========================
-        FOOTER SECTION
-        =========================== -->
+        FOOTER
+  =========================== -->
   <footer>
     <div class="container">
       <div class="row">
@@ -369,77 +330,22 @@
     </div>
   </footer>
 
-  <!-- jQuery -->
+  <!-- scripts (unchanged) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <!-- SmoothScroll -->
   <script type="text/javascript" src="assets/smoothscroll/smoothscroll.js"></script>
-  <!-- Bootstrap -->
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-  <!-- Waypoints -->
   <script src="js/waypoints.min.js"></script>
-  <!-- classie.js -->
   <script src="js/classie.js"></script>
-  <!-- FlexSlider -->
   <script src="assets/flexslider/jquery.flexslider.js"></script>
-  <!-- Modernizr -->
   <script src="js/modernizr.js"></script>
-  <!-- Text Rotator -->
   <script src="assets/textrotator/jquery.simple-text-rotator.js"></script>
-  <!-- Lightbox.js -->
   <script src="assets/lightbox/js/lightbox.min.js"></script>
-  <!-- Google Maps -->
+
   <script type="text/javascript"
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeKBBPJTG3v5w3cNPAgM6ZsJiPyL1mP_o&amp;sensor=false"></script>
-  <!-- Theme JavaScript Core -->
+
   <script src="js/main.js"></script>
   <script src="js/script.js"></script>
-
-  <!-- GOOGLE MAPS DATA -->
-  <script type="text/javascript">
-    google.maps.event.addDomListener(window, "load", init);
-
-    function init() {
-      var mapOptions = {
-        zoom: 15,
-
-        scrollwheel: false,
-
-        center: new google.maps.LatLng(40.68961985411178, -74.01618003845215), // New York
-
-        styles: [
-          {
-            featureType: "water",
-            stylers: [{ color: "#F2F2F2" }, { visibility: "on" }],
-          },
-          { featureType: "landscape", stylers: [{ color: "#FFFFFF" }] },
-          {
-            featureType: "road",
-            stylers: [{ saturation: -100 }, { lightness: 45 }],
-          },
-          {
-            featureType: "road.highway",
-            stylers: [{ visibility: "simplified" }],
-          },
-          {
-            featureType: "road.arterial",
-            elementType: "labels.icon",
-            stylers: [{ visibility: "off" }],
-          },
-          {
-            featureType: "administrative",
-            elementType: "labels.text.fill",
-            stylers: [{ color: "#ADADAD" }],
-          },
-          { featureType: "transit", stylers: [{ visibility: "off" }] },
-          { featureType: "poi", stylers: [{ visibility: "off" }] },
-        ],
-      };
-
-      var mapElement = document.getElementById("googlemaps");
-
-      var map = new google.maps.Map(mapElement, mapOptions);
-    }
-  </script>
 
   <script type="text/javascript">
     $(".rotate").textrotator({
@@ -449,5 +355,4 @@
     });
   </script>
 </body>
-
 </html>
